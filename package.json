@@ -1,5 +1,5 @@
 {
-  "name": "ee-template",
+  "name": "ee-github-project-management",
   "version": "0.0.0",
   "description": "",
   "main": "",
@@ -14,7 +14,10 @@
     "precommit": "no-master-commits -b master"
   },
   "peerDependencies": {},
-  "dependencies": {},
+  "dependencies": {
+    "dagre": "0.8.5",
+    "reactflow": "11.8.1"
+  },
   "devDependencies": {},
   "license": "ISC",
   "pre-commit": [

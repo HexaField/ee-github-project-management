@@ -26,10 +26,14 @@ Ethereal Engine. All Rights Reserved.
 import type { ProjectConfigInterface } from '@etherealengine/projects/ProjectConfigInterface'
 
 const config: ProjectConfigInterface = {
-  onEvent: undefined,
+  onEvent: './projectEventHooks.ts',
   thumbnail: '/static/etherealengine.png',
-  routes: {},
-  services: undefined,
+  routes: {
+    "/github": {
+      component: () => import('./src/pages/ProjectPlanning')
+    }
+  },
+  services: './src/services/services.ts',
   databaseSeed: undefined
 }
 
